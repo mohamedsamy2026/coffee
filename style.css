@@ -606,13 +606,12 @@ textarea{
 @media(max-width:1000px){
      #header .navbar{
         flex-direction: column;
-        gap: 12px;
         height: auto;
         padding-bottom: 2rem;
      }
 
      #header .navbar .logo{
-      margin: 1rem 0;
+      margin: 0.5rem 0;
 }
 #home .container .content-text{
     margin-top: 7.5%;
@@ -693,13 +692,30 @@ textarea{
 #fotter .fotter-top .row .col p{
   font-size: 15px;
   width: 200px;
-} 
+}
+
+#header .navbar ul {
+    margin-left: 20px;
+}
+
 #header .navbar ul li a{
     margin: 0 10px;
     font-size: 12px;
+    text-align: center;
+}
+
+#home .container .content-text{
+    margin-top: 20%;
 }
 
 }
+
+@media (max-width:450px){
+#home .container .content-text{
+    margin-top: 30%;
+}
+}
+
 /* media Tablet End */
 
 /* media End */
