@@ -58,6 +58,7 @@ a{
 
 /* Header Start */
 header{
+    z-index: 100;
     position: fixed;
     width: 100%;
     border: 1px solid #ccc;
@@ -525,7 +526,8 @@ textarea{
 }
 
 .content-items .item{
-    margin-left: 3rem;
+    margin-left: 2rem;
+    margin-right: 0.7rem;
 }
 .content-items{
     display: block;
@@ -601,6 +603,103 @@ textarea{
 
 }
 
+@media(max-width:1000px){
+     #header .navbar{
+        flex-direction: column;
+        gap: 12px;
+        height: auto;
+        padding-bottom: 2rem;
+     }
+
+     #header .navbar .logo{
+      margin: 1rem 0;
+}
+#home .container .content-text{
+    margin-top: 7.5%;
+    
+}
+
+#fotter .fotter-top .row{
+    grid-template-columns: 1fr 2fr;
+    margin-left: 3rem;
+}
+
+#fotter .fotter-top .row p,a,li{
+    font-size: 18px;
+}
+}
+
+
+@media(max-width:800px){
+    #home .container .content-text{
+    margin-top: 15%;
+}
+
+#fotter .fotter-top .row{
+    grid-template-columns: 1fr;
+    margin-left: 3rem;
+}
+
+
+#fotter .fotter-top .row .col #ul2{
+    margin: auto;
+    margin-bottom: 1rem;
+    position: relative;
+    padding-bottom: 10px;
+    display: block;
+}
+
+#fotter .fotter-top .row .col #ul2::after{
+    content: "";
+    display: block;
+    width: 175px;          
+    height: 2px;
+    background-color: #ccc;
+    margin: 8px auto 0;
+}
+
+
+#fotter .fotter-top .row .col #ul3{
+    margin: auto;
+    margin-bottom: 1rem;
+    position: relative;
+    padding-bottom: 10px;
+    display: block;
+}
+
+#fotter .fotter-top .row .col #ul3::after{
+    content: "";
+    display: block;
+    width: 175px;          
+    height: 2px;
+    background-color: #ccc;
+    margin: 8px auto 0;
+}
+
+}
+
+@media (max-width:650px){
+    #header .navbar ul li a{
+        font-size: 12px;
+   }
+
+   #testimonials .row .item{
+    width: 350px;
+    margin: 1rem auto;
+}
+}
+
+@media (max-width:550px){
+#fotter .fotter-top .row .col p{
+  font-size: 15px;
+  width: 200px;
+} 
+#header .navbar ul li a{
+    margin: 0 10px;
+    font-size: 12px;
+}
+
+}
 /* media Tablet End */
 
 /* media End */
