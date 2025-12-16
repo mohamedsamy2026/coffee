@@ -719,7 +719,7 @@ textarea{
 
 
 #fotter .fotter-top .row{
-    margin-right: 8%;
+    margin-left: 6%;
 }
 
 }
@@ -727,6 +727,9 @@ textarea{
 @media (max-width:450px){
 #home .container .content-text{
     margin-top: 30%;
+}
+#fotter .fotter-top .row{
+    margin-left: 1%;
 }
 }
 
