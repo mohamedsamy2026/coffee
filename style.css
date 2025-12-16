@@ -62,7 +62,7 @@ header{
     position: fixed;
     width: 100%;
     border: 1px solid #ccc;
-    background-color: var(--bg-secondery);
+    background-color: white;
 
 }
 #header .navbar{
@@ -686,9 +686,18 @@ textarea{
     width: 350px;
     margin: 1rem auto;
 }
+
+#contact .contact-all .form{
+    width: 100%;
+    margin-top: 1rem;
+}
 }
 
 @media (max-width:550px){
+    #about .about-content-text p {
+        width: 80%;
+    }
+
 #fotter .fotter-top .row .col p{
   font-size: 15px;
   width: 200px;
@@ -700,12 +709,17 @@ textarea{
 
 #header .navbar ul li a{
     margin: 0 10px;
-    font-size: 12px;
+    font-size: 13px;
     text-align: center;
 }
 
 #home .container .content-text{
     margin-top: 20%;
+}
+
+
+#fotter .fotter-top .row{
+    margin-right: 8%;
 }
 
 }
